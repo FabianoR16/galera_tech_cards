@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    width: 80%;
+    height: 800px;
+    background-color: rgb(0, 0, 0);
+}
+
+.a, .b, .c {
+    width: 31.33%;
+    height: 800px;
+    float: left;
+    margin: 5px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.a {
+    background: linear-gradient(135deg, #006600, #FF0000);
+}
+
+.b {
+    background: linear-gradient(135deg, #74ACDF, #2c474b);
+}
+
+.c {
+    background: linear-gradient(135deg, #00A859, #4f4011);
+}
+
+img {
+    padding: 2px;
+    width: 96%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 4px 0 50px black;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    padding: 2px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;     
+    margin-bottom: 20px;    
+}
+
+.btn:hover {
+    background-color:transparent;
+    color: black;
+    transition: 1s;
+}
+
+/* Responsividade  */
+@media only screen and (max-width: 576px) {
+    main {
+        width: 100%;
+        position: relative;
+        left: 10%;
+    }
+    .a, .b, .c {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 10px 0;
+    }
+}
